@@ -9,15 +9,15 @@ class AuctionController extends Controller{
     public function actionLogin()
     {
         // echo 1;
-       $imei = Yii::$app->request->post('imei');
-       $token = '123452';
-       if($imei!=md5($token)){
-           $data=[
-               'code'=>"405",
-               'msg'=>"非法请求",
-               'time'=>time()
-           ];
-           echo json_encode($data);exit;
+       // $imei = Yii::$app->request->post('imei');
+       // $token = '123452';
+       // if($imei!=md5($token)){
+       //     $data=[
+       //         'code'=>"405",
+       //         'msg'=>"非法请求",
+       //         'time'=>time()
+       //     ];
+       //     echo json_encode($data);exit;
 //        }
         if(Yii::$app->request->post()){
             $username = Yii::$app->request->post('username');
