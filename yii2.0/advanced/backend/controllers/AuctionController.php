@@ -36,8 +36,7 @@ class LoginController extends CommonController
               // );
               $arr = $this->error;
         }
-        var_dump($arr);die;
-        return json_encode($arr);  
+
         return json_encode($arr);  
 
     }
