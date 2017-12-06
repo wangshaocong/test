@@ -8,15 +8,16 @@ class AuctionController extends Controller{
     public $enableCsrfValidation = false;
     public function actionLogin()
     {
-//        $imei = Yii::$app->request->post('imei');
-//        $token = '123452';
-//        if($imei!=md5($token)){
-//            $data=[
-//                'code'=>"405",
-//                'msg'=>"非法请求",
-//                'time'=>time()
-//            ];
-//            echo json_encode($data);exit;
+        // echo 1;
+       $imei = Yii::$app->request->post('imei');
+       $token = '123452';
+       if($imei!=md5($token)){
+           $data=[
+               'code'=>"405",
+               'msg'=>"非法请求",
+               'time'=>time()
+           ];
+           echo json_encode($data);exit;
 //        }
         if(Yii::$app->request->post()){
             $username = Yii::$app->request->post('username');
