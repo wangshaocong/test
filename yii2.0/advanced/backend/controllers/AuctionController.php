@@ -1,65 +1,68 @@
-<?php
+<?php 
 namespace backend\controllers;
 
 use Yii;
+use common\models\LoginForm;
 use yii\web\Controller;
-use  yii\web\Session;
-class AuctionController extends Controller{
-    public $enableCsrfValidation = false;
-    public function actionLogin()
-    {
-//        $imei = Yii::$app->request->post('imei');
-//        $token = '123452';
-//        if($imei!=md5($token)){
-//            $data=[
-//                'code'=>"405",
-//                'msg'=>"非法请求",
-//                'time'=>time()
-//            ];
-//            echo json_encode($data);exit;
-//        }
-        if(Yii::$app->request->post()){
-            $username = Yii::$app->request->post('username');
-            $password = Yii::$app->request->post('passwd');
-            if (empty($username)||empty($password)) {
-                $data=[
-                    'code'=>"404",
-                    'msg'=>"参数不完整",
-                    'time'=>time()
-                ];
-                return json_encode($data);
-            }
-            $sql="select * from au_user where `username`='$username' and `password`='$password'";
-            $res = Yii::$app->db->createCommand($sql)->queryOne();
-            if ($res)
-            {
-                $ress = Yii::$app->db->createCommand("UPDATE `au_user` SET  `login_time`='".date('Y-m-d H:i:s')."' WHERE (`user_id`='".$res['user_id']."')")->execute();
-//                print_r($ress);die;
-                $session = Yii::$app->session;
-                $session->set('user_id', $res['user_id']);
-                $data=[
-                    'code'=>200,
-                    'msg'=>'success',
-                    'data'=>[
-                        'empt_id'=>'xxxxx',
-                        'token'=>md5(123456),
-                        'real_name'=>'',
-                    ],
-                ];
-                return json_encode($data);
-            }else{
-                $data=[
-                    'code'=>"500",
-                    'msg'=>"请求失败",
-                    'data'=>[
-                        'empt_id'=>'xxxxx',
-                        'token'=>md5(123456),
-                        'real_name'=>'',
-                    ],
-                ];
-                return json_encode($data);
-            }
+use common\commoncontroller\comm;
+use backend\models\AuUser;
+
+header('content-type:text/html;charset=utf-8');
+
+/**
+*  登录接口
+*/
+class LoginController extends CommonController
+{
+    public function actionLogin(){
+        // 登陆接口
+        $username = Yii::$app->request->post('username');
+        $password = Yii::$app->request->post('password');
+        // yii::$app->db;5
+        $db = new AuUser();
+        $res = $db->find()->where("username='$username' and password='$password'")->one();
+        // 登录成功生成token
+        $userId = $res['user_id'];
+        $data = time().rand(0,999);
+        $token = md5($userId.$data);
+        // echo md5($data);die;
+        // var_dump($res);die;
+        if($res){
+            $arr = $this->success['data']['token'] = $token;
+        }else{
+              // $arr = array(
+              //   'code'  =>  0,
+              //   'data'=>'登录失败'
+              // );
+              $arr = $this->error;
         }
-//        return $this->render('login');
+        var_dump($arr);die;
+        return json_encode($arr);  
+        return json_encode($arr);  
+
     }
+
+    // 调用页面 测试接口
+    public function actionLtest(){
+        if(yii::$app->request->isPost){
+            // echo 222;die;
+            $username = Yii::$app->request->post('username');
+            $password = Yii::$app->request->post('password');
+// 去请求接口
+             $ch=curl_init();
+             curl_setopt_array($ch,[CURLOPT_URL=>"http://127.0.0.1/auction/backend/web/index.php?r=login/login",CURLOPT_POST=>true,CURLOPT_POSTFIELDS=>['username'=>$username,'password'=>$password],CURLOPT_RETURNTRANSFER=>true]);
+            $res=curl_exec($ch);
+
+            return $res;
+            // var_dump(curl_error($ch));die;
+            curl_close($ch);
+
+
+        }else{
+            return $this->render('ltest.html');
+        }
+    }
+
 }
+
+ ?>
