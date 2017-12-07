@@ -46,5 +46,45 @@ class CommonController extends Controller
     public function jsonss($arr){
         echo json_encode($arr);
     }
+
+    /**
+     * 生成秘钥
+     * @param  [type] $userId [description]
+     * @return [type]         [description]
+     */
+    public function createKey($userId){
+        $auth= Yii::$app->params['auth'];
+        // var_dump($auth);
+        $date = time();
+        $token_md5 = md5(md5($userId.$date));
+        $tokens = $date.$token_md5;
+        $salt = $auth['key'].$userId;
+        // echo $salt;die;
+        $token = Yii::$app->getSecurity()->encryptByPassword($tokens,$salt);
+        return $token;
+    }
+
+    // 验证token
+    public function yz_token($userId,$token){
+         $auth= Yii::$app->params['auth'];
+         $salt = $auth['key'].$userId;
+         $token_jjj = Yii::$app->getSecurity()->decryptByPassword($token,$salt);
+//var_dump($token_jjj);die;
+         $date = substr($token_jjj,0,10);
+         $tokenme=substr($token_jjj,10,32);
+        
+     if(time()-$date<$auth['timeout']){
+         $token_md5=md5(md5($userId.$date));
+         $tokens = $date.$token_md5;
+         if($tokens==$tokenme){
+            echo  0;
+         }
+     }else{
+          return ['code' => 416,'msg'=>'认证失败'];
+     }
+        
+
+    }
+
     
 }

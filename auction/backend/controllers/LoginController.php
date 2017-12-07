@@ -14,6 +14,7 @@ header('content-type:text/html;charset=utf-8');
 */
 class LoginController extends CommonController
 {
+
 	public function actionLogin(){
 		// 登陆接口
 		$username = Yii::$app->request->post('username');
@@ -23,11 +24,12 @@ class LoginController extends CommonController
 		$res = $db->find()->where("username='$username' and password='$password'")->one();
 		// 登录成功生成token
 		$userId = $res['user_id'];
-		$project = '315C';
-		$token = md5(md5($userId).$project);
-		// $data = time().rand(0,999);
-		// $token = md5($userId.$data);
+
 		if($res){
+			$res=$this->createKey($userId);
+			$token = base64_encode($res);
+		// var_dump(base64_encode($res));die;
+
 			$this->success['data']['username'] = $username;
 			$this->success['data']['password'] = $password;
 			$this->success['data']['token'] = $token;
@@ -61,6 +63,8 @@ class LoginController extends CommonController
 			return $this->render('ltest.html');
 		}
 	}
+
+	// 生成秘钥
 
 }
 
