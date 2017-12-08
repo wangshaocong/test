@@ -1,0 +1,1470 @@
+2017-12-07 16:54:42 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: D:/phpStudy/WWW/1508A12/auction/backend/web/assets' 
+
+in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\AssetManager.php:211
+
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(600): yii\di\ServiceLocator->get('assetManager')
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\View.php(223): yii\base\Application->getAssetManager()
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Component.php(130): yii\web\View->getAssetManager()
+#9 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#10 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(55): yii\debug\panels\AssetPanel->save()
+#11 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#12 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#13 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#14 [internal function]: yii\log\Logger->flush(true)
+#15 {main}
+2017-12-07 16:54:42 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_COOKIE = [
+    '_csrf' => 'ec6347700d9670cb1cf169d317769f27fed822db4c19e9f81185d7566157bc73a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Xo4ew5AReoeUlIrUPqAPvoZx3Vw8eSVt\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=ec6347700d9670cb1cf169d317769f27fed822db4c19e9f81185d7566157bc73a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Xo4ew5AReoeUlIrUPqAPvoZx3Vw8eSVt%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '58826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/1508A12/auction/backend/web/'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512636882.528
+    'REQUEST_TIME' => 1512636882
+]
+2017-12-07 16:54:42 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: D:/phpStudy/WWW/1508A12/auction/backend/web/assets' 
+
+in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\AssetManager.php:211
+
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(600): yii\di\ServiceLocator->get('assetManager')
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\View.php(223): yii\base\Application->getAssetManager()
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\View.php(283): yii\web\View->getAssetManager()
+#9 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#10 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\validators\RequiredValidator.php(108): yii\web\AssetBundle::register(Object(yii\web\View))
+#11 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\widgets\ActiveField.php(699): yii\validators\RequiredValidator->clientValidateAttribute(Object(common\models\LoginForm), 'username', Object(yii\web\View))
+#12 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\widgets\ActiveField.php(210): yii\widgets\ActiveField->getClientOptions()
+#13 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\widgets\ActiveField.php(200): yii\widgets\ActiveField->begin()
+#14 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-bootstrap\ActiveField.php(188): yii\widgets\ActiveField->render(NULL)
+#15 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\widgets\ActiveField.php(156): yii\bootstrap\ActiveField->render()
+#16 D:\phpStudy\WWW\1508A12\auction\backend\views\site\login.php(22): yii\widgets\ActiveField->__toString()
+#17 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(325): require('D:\\phpStudy\\WWW...')
+#18 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#19 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(backend\controllers\SiteController))
+#20 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#21 D:\phpStudy\WWW\1508A12\auction\backend\controllers\SiteController.php(73): yii\base\Controller->render('login', Array)
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#26 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#27 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\widgets\ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#3 D:\phpStudy\WWW\1508A12\auction\backend\views\site\login.php(22): yii\widgets\ActiveField->__toString()
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(325): require('D:\\phpStudy\\WWW...')
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(backend\controllers\SiteController))
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(backend\controllers\SiteController))
+#8 D:\phpStudy\WWW\1508A12\auction\backend\controllers\SiteController.php(73): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in D:\phpStudy\WWW\1508A12\auction\backend\views\site\login.php:22
+    in D:\phpStudy\WWW\1508A12\auction\backend\controllers\SiteController.php:73
+2017-12-07 16:54:42 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ec6347700d9670cb1cf169d317769f27fed822db4c19e9f81185d7566157bc73a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Xo4ew5AReoeUlIrUPqAPvoZx3Vw8eSVt\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=ec6347700d9670cb1cf169d317769f27fed822db4c19e9f81185d7566157bc73a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Xo4ew5AReoeUlIrUPqAPvoZx3Vw8eSVt%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '58826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512636882.604
+    'REQUEST_TIME' => 1512636882
+]
+2017-12-07 16:54:42 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'The directory does not exist: D:/phpStudy/WWW/1508A12/auction/backend/web/assets' 
+
+in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\AssetManager.php:211
+
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(600): yii\di\ServiceLocator->get('assetManager')
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\View.php(223): yii\base\Application->getAssetManager()
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Component.php(130): yii\web\View->getAssetManager()
+#9 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\base\Component->__get('assetManager')
+#10 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(55): yii\debug\panels\AssetPanel->save()
+#11 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#12 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#13 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#14 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#15 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php(203): yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#16 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#17 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#18 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\widgets\ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidConfigException))
+#19 D:\phpStudy\WWW\1508A12\auction\backend\views\site\login.php(22): yii\widgets\ActiveField->__toString()
+#20 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(325): require('D:\\phpStudy\\WWW...')
+#21 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(backend\controllers\SiteController))
+#23 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(backend\controllers\SiteController))
+#24 D:\phpStudy\WWW\1508A12\auction\backend\controllers\SiteController.php(73): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: backend\controllers\SiteController->actionLogin()
+#26 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#27 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+2017-12-07 16:54:42 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ec6347700d9670cb1cf169d317769f27fed822db4c19e9f81185d7566157bc73a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Xo4ew5AReoeUlIrUPqAPvoZx3Vw8eSVt\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=ec6347700d9670cb1cf169d317769f27fed822db4c19e9f81185d7566157bc73a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Xo4ew5AReoeUlIrUPqAPvoZx3Vw8eSVt%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '58826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512636882.604
+    'REQUEST_TIME' => 1512636882
+]
+2017-12-07 16:55:56 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "complete/complete".' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('complete/comple...', Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-07 16:55:56 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'complete/complete'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '58872'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=complete/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512636956.117
+    'REQUEST_TIME' => 1512636956
+]
+2017-12-07 17:13:30 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\phpStudy\WWW\1508A12\auction\backend\views\complete\index.php' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(backend\controllers\CompleteController))
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\CompleteController))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\controllers\CompleteController.php(58): yii\base\Controller->render('index')
+#3 [internal function]: backend\controllers\CompleteController->actionComplete()
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('complete', Array)
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('complete/comple...', Array)
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2017-12-07 17:13:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'complete/complete'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '59419'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=complete/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512638010.266
+    'REQUEST_TIME' => 1512638010
+]
+2017-12-07 17:13:30 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2017-12-07 17:13:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'complete/complete'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '59419'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=complete/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512638010.266
+    'REQUEST_TIME' => 1512638010
+]
+2017-12-07 19:07:00 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\phpStudy\WWW\1508A12\auction\backend\views\auction\index.php' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(backend\controllers\AuctionController))
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\AuctionController))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\controllers\AuctionController.php(58): yii\base\Controller->render('index')
+#3 [internal function]: backend\controllers\AuctionController->actionComplete()
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('complete', Array)
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('auction/complet...', Array)
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2017-12-07 19:07:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '61645'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512644820.845
+    'REQUEST_TIME' => 1512644820
+]
+2017-12-07 19:07:00 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2017-12-07 19:07:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '61645'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512644820.845
+    'REQUEST_TIME' => 1512644820
+]
+2017-12-07 20:25:12 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "complete/complete".' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('complete/comple...', Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-07 20:25:12 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'complete/complete'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '63476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=complete/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512649512.339
+    'REQUEST_TIME' => 1512649512
+]
+2017-12-07 20:25:34 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "complete/complete".' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('complete/comple...', Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-07 20:25:34 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'complete/complete'
+]
+
+$_POST = [
+    'emp_id' => ''
+    'token' => ''
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '94'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '63494'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=complete/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512649534.853
+    'REQUEST_TIME' => 1512649534
+]
+2017-12-07 20:26:09 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "complete/complete1".' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('complete/comple...', Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-07 20:26:09 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'complete/complete1'
+]
+
+$_POST = [
+    'emp_id' => ''
+    'token' => ''
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '94'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '63503'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=complete/complete1'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete1'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512649569.019
+    'REQUEST_TIME' => 1512649569
+]
+2017-12-07 20:26:23 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "complete/complete".' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('complete/comple...', Array)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-07 20:26:23 [127.0.0.1][-][2p2jnpnsin5s6m6m7dgf75v6e6][info][application] $_GET = [
+    'r' => 'complete/complete'
+]
+
+$_POST = [
+    'emp_id' => ''
+    'token' => ''
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/1508A12/auction/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '94'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '63529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=complete/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=complete/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512649583.649
+    'REQUEST_TIME' => 1512649583
+]
+2017-12-07 20:26:34 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php(15): yii\db\Command->queryAll()
+#8 D:\phpStudy\WWW\1508A12\auction\backend\controllers\AuctionController.php(24): backend\models\complete->select('[<span class="s...')
+#9 [internal function]: backend\controllers\AuctionController->actionComplete()
+#10 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php(15): yii\db\Command->queryAll()
+#6 D:\phpStudy\WWW\1508A12\auction\backend\controllers\AuctionController.php(24): backend\models\complete->select('[<span class="s...')
+#7 [internal function]: backend\controllers\AuctionController->actionComplete()
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+
+2017-12-07 20:26:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => ''
+    'token' => ''
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '94'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '63535'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512649593.37
+    'REQUEST_TIME' => 1512649593
+]
+2017-12-07 20:32:17 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'upload_time' in 'where clause'' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php(15): yii\db\Command->queryAll()
+#3 D:\phpStudy\WWW\1508A12\auction\backend\controllers\AuctionController.php(24): backend\models\complete->select('[<span class="s...')
+#4 [internal function]: backend\controllers\AuctionController->actionComplete()
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'upload_time' in 'where clause'
+The SQL being executed was: select * from `au_cars` where car_type= '' and car_status = '' and upload_time < '' and upload_time > ''' in D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'select * from `...')
+#1 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php(15): yii\db\Command->queryAll()
+#3 D:\phpStudy\WWW\1508A12\auction\backend\controllers\AuctionController.php(24): backend\models\complete->select('[<span class="s...')
+#4 [internal function]: backend\controllers\AuctionController->actionComplete()
+#5 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#6 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 D:\phpStudy\WWW\1508A12\auction\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\1508A12\auction\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'upload_time' in 'where clause'
+)
+
+2017-12-07 20:32:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => ''
+    'token' => ''
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '94'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '63632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512649936.754
+    'REQUEST_TIME' => 1512649936
+]
+2017-12-07 21:05:09 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$list' (T_VARIABLE)' in D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php:24
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-07 21:05:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => '1'
+    'token' => 'wangshaocong'
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u8er9rh38g5nouvrh86fc67sj7'
+    '_csrf' => 'b4144bd0b52c436682c9063d5ea2107ddb0239f9c00037366d87e3b70b143e34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIsYECAsHeskfRUZk08H8a6czSFaeAqt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_COOKIE' => 'PHPSESSID=u8er9rh38g5nouvrh86fc67sj7; _csrf=b4144bd0b52c436682c9063d5ea2107ddb0239f9c00037366d87e3b70b143e34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIsYECAsHeskfRUZk08H8a6czSFaeAqt%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '64567'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512651909.26
+    'REQUEST_TIME' => 1512651909
+]
+2017-12-07 21:05:32 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$list' (T_VARIABLE)' in D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php:24
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-07 21:05:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => '1'
+    'token' => 'wangshaocong'
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u8er9rh38g5nouvrh86fc67sj7'
+    '_csrf' => 'b4144bd0b52c436682c9063d5ea2107ddb0239f9c00037366d87e3b70b143e34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zIsYECAsHeskfRUZk08H8a6czSFaeAqt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_COOKIE' => 'PHPSESSID=u8er9rh38g5nouvrh86fc67sj7; _csrf=b4144bd0b52c436682c9063d5ea2107ddb0239f9c00037366d87e3b70b143e34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zIsYECAsHeskfRUZk08H8a6czSFaeAqt%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '64574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512651932.814
+    'REQUEST_TIME' => 1512651932
+]
+2017-12-07 21:10:22 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'' in D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php:24
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-07 21:10:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => '1'
+    'token' => 'wangshaocong'
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '64653'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512652222.904
+    'REQUEST_TIME' => 1512652222
+]
+2017-12-07 21:12:29 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'' in D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-07 21:12:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => '1'
+    'token' => 'wangshaocong'
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '64680'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512652349.151
+    'REQUEST_TIME' => 1512652349
+]
+2017-12-07 21:12:52 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'' in D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-07 21:12:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => '1'
+    'token' => 'wangshaocong'
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '64685'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512652372.583
+    'REQUEST_TIME' => 1512652372
+]
+2017-12-07 21:21:22 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use [] for reading' in D:\phpStudy\WWW\1508A12\auction\backend\models\complete.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-07 21:21:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'auction/complete'
+]
+
+$_POST = [
+    'emp_id' => '1'
+    'token' => 'wangshaocong'
+    'series_id' => ''
+    'car_status' => ''
+    'starttime' => ''
+    'endtime' => ''
+    'currentPage' => ''
+    'pageSize' => ''
+    'submit' => 'submit'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13\";}'
+    'PHPSESSID' => '2p2jnpnsin5s6m6m7dgf75v6e6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '107'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/1508A12/auction/backend/web/index.php?r=auction/complete1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf=d7a495d1e119d87b967269d8ad3d9e11d4f4b9a57a444c719c364132469e085fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c6s_fe1uUN45FPR2hZtuaQb7NqkqvV13%22%3B%7D; PHPSESSID=2p2jnpnsin5s6m6m7dgf75v6e6'
+    'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/1508A12/auction/backend/web/index.php'
+    'REMOTE_PORT' => '64910'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=auction/complete'
+    'REQUEST_URI' => '/1508A12/auction/backend/web/index.php?r=auction/complete'
+    'SCRIPT_NAME' => '/1508A12/auction/backend/web/index.php'
+    'PHP_SELF' => '/1508A12/auction/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512652882.016
+    'REQUEST_TIME' => 1512652882
+]
