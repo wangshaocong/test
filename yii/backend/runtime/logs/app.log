@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2017-12-09 11:12:41 [127.0.0.1][-][n1q63jvqnm56u44jn0t143huo2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "auction/index".' in D:\phpStudy\WWW\1508A12\yii\vendor\yiisoft\yii2\base\Module.php:461
 Stack trace:
 #0 D:\phpStudy\WWW\1508A12\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('auction/index', Array)
@@ -17,10 +18,33 @@ Stack trace:
 $_COOKIE = [
     'PHPSESSID' => 'n1q63jvqnm56u44jn0t143huo2'
     '_csrf' => 'aee251e9bdee56d13c8335203071a0e21002829b3a6de131b2a2648c8eb08629a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"coHHZ67auFO4VnhMbnYykMscwOVqeqRm\";}'
+=======
+2017-12-09 03:06:55 [127.0.0.1][-][2ia7m3ff3t2m0r1u8285q5fbu1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demo".' in E:\Program\WWW\test\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\Program\WWW\test\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('demo', Array)
+#1 E:\Program\WWW\test\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Program\WWW\test\yii\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Program\WWW\test\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\Program\WWW\test\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Program\WWW\test\yii\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-09 03:06:55 [127.0.0.1][-][2ia7m3ff3t2m0r1u8285q5fbu1][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_COOKIE = [
+    'shrek_uuid' => 'B6151097053266981'
+    'PHPSESSID' => '2ia7m3ff3t2m0r1u8285q5fbu1'
+    '_csrf' => '83dedf58e1f068870c9999a85b9b7f78be95ef2d499ff6d4ed543d38f5cc567aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sFro_YyFmpzZSonJ710Lo1vcVZIxmqnr\";}'
+>>>>>>> 60ae194b2caf7701664cae279572860573b15d48
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/1508A12/yii/backend/web/'
 ]
 
@@ -34,12 +58,29 @@ $_SERVER = [
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+=======
+    '__returnUrl' => '/test/yii/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'shrek_uuid=B6151097053266981; PHPSESSID=2ia7m3ff3t2m0r1u8285q5fbu1; _csrf=83dedf58e1f068870c9999a85b9b7f78be95ef2d499ff6d4ed543d38f5cc567aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sFro_YyFmpzZSonJ710Lo1vcVZIxmqnr%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\servere\\mysql\\bin;E:\\Program Files (x86)_common\\SVN\\bin;E:\\Program\\php\\php-5.5.38;C:\\composer;C:\\Users\\薇薇\\AppData\\Roaming\\Composer\\vendor\\bin'
+>>>>>>> 60ae194b2caf7701664cae279572860573b15d48
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
     'SERVER_SIGNATURE' => ''
     'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+<<<<<<< HEAD
     'SERVER_NAME' => '127.0.0.1'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -273,10 +314,54 @@ Stack trace:
 $_COOKIE = [
     'PHPSESSID' => 'n1q63jvqnm56u44jn0t143huo2'
     '_csrf' => 'aee251e9bdee56d13c8335203071a0e21002829b3a6de131b2a2648c8eb08629a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"coHHZ67auFO4VnhMbnYykMscwOVqeqRm\";}'
+=======
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/Program/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Program/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/Program/WWW/test/yii/backend/web/index.php'
+    'REMOTE_PORT' => '59150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_URI' => '/test/yii/backend/web/index.php?r=demo'
+    'SCRIPT_NAME' => '/test/yii/backend/web/index.php'
+    'PHP_SELF' => '/test/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512788815.784
+    'REQUEST_TIME' => 1512788815
+]
+2017-12-09 03:07:13 [127.0.0.1][-][2ia7m3ff3t2m0r1u8285q5fbu1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "login/ltest".' in E:\Program\WWW\test\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\Program\WWW\test\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/ltest', Array)
+#1 E:\Program\WWW\test\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Program\WWW\test\yii\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Program\WWW\test\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\Program\WWW\test\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Program\WWW\test\yii\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-12-09 03:07:13 [127.0.0.1][-][2ia7m3ff3t2m0r1u8285q5fbu1][info][application] $_GET = [
+    'r' => 'login/ltest'
+]
+
+$_COOKIE = [
+    'shrek_uuid' => 'B6151097053266981'
+    'PHPSESSID' => '2ia7m3ff3t2m0r1u8285q5fbu1'
+    '_csrf' => '83dedf58e1f068870c9999a85b9b7f78be95ef2d499ff6d4ed543d38f5cc567aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sFro_YyFmpzZSonJ710Lo1vcVZIxmqnr\";}'
+>>>>>>> 60ae194b2caf7701664cae279572860573b15d48
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/1508A12/yii/backend/web/'
 ]
 
@@ -290,12 +375,29 @@ $_SERVER = [
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => 'D:\\phpStudy\\php\\php-5.5.38;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\wbem'
+=======
+    '__returnUrl' => '/test/yii/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'shrek_uuid=B6151097053266981; PHPSESSID=2ia7m3ff3t2m0r1u8285q5fbu1; _csrf=83dedf58e1f068870c9999a85b9b7f78be95ef2d499ff6d4ed543d38f5cc567aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sFro_YyFmpzZSonJ710Lo1vcVZIxmqnr%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;E:\\servere\\mysql\\bin;E:\\Program Files (x86)_common\\SVN\\bin;E:\\Program\\php\\php-5.5.38;C:\\composer;C:\\Users\\薇薇\\AppData\\Roaming\\Composer\\vendor\\bin'
+>>>>>>> 60ae194b2caf7701664cae279572860573b15d48
     'SystemRoot' => 'C:\\Windows'
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
     'SERVER_SIGNATURE' => ''
     'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j PHP/5.5.38'
+<<<<<<< HEAD
     'SERVER_NAME' => '127.0.0.1'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -316,4 +418,26 @@ $_SERVER = [
     'PHP_SELF' => '/1508A12/yii/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1512789351.065
     'REQUEST_TIME' => 1512789351
+=======
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/Program/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Program/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'E:/Program/WWW/test/yii/backend/web/index.php'
+    'REMOTE_PORT' => '59158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=login%2Fltest'
+    'REQUEST_URI' => '/test/yii/backend/web/index.php?r=login%2Fltest'
+    'SCRIPT_NAME' => '/test/yii/backend/web/index.php'
+    'PHP_SELF' => '/test/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512788833.317
+    'REQUEST_TIME' => 1512788833
+>>>>>>> 60ae194b2caf7701664cae279572860573b15d48
 ]
