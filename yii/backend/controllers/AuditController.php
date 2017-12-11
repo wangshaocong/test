@@ -5,13 +5,24 @@ use Yii;
 use common\models\LoginForm;
 use yii\web\Controller;
 use backend\models\auditing;
-
+use backend\models\Auditingreturn;
 /**
 * 
 */
 class AuditController extends Controller
 {
 	public $enableCsrfValidation = false;
+	//审核驳回接口
+	 public function actionAuditfail(){
+            if(Yii::$app->request->post()){
+                $data = Yii::$app->request->post();
+                $obj = new Auditingreturn();
+                return $obj->auditingreturn($data);
+            }else{
+                return $this->render('show_auditing');
+            }
+    }
+    //审核中接口
 	public function actionAuditing()
 	{
 		if(Yii::$app->request->post()){
