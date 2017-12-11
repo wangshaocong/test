@@ -52,4 +52,61 @@ class AuctionController extends Controller{
 	public function actionComplete1(){
 		return $this->render('index');
 	}
+
+	//版本更新接口
+	public function actionVersionupdate() {
+        // $rep = array('code' => 200);
+        $emp_id = Yii::$app->request->post('emp_id',0);
+        $sort_id = Yii::$app->request->post('sort',0);
+        $driver = Yii::$app->request->post('driver',0);
+        $version = Yii::$app->request->post('version');
+        $token = Yii::$app->request->post('token','');
+        if ($sort_id < 1 || $driver < 1 || $version == '') {
+            $data = [
+                'code'=>201,
+                'msg'=>"error",
+                    'data'=>"参数不完整"
+                ];
+            } else {
+                $owner_token = '1';
+                if($token !== $owner_token){
+                     $data = [
+                        'code'=>500,
+                        'msg'=>"error",
+                        'data'=>"token不正确"
+                    ];
+                }else{
+                    $lastest = Yii::$app->db->createCommand("select * from `au_version` order by version  DESC limit 1")->queryOne();
+                    if ($lastest) {
+                        if ($version==$lastest['version'])
+                        {
+                            $data = [
+                                'code'=>"200",
+                                'msg'=>"success",
+                                'data'=>array(
+                                    'name'=>$lastest['name'],
+                                    'version'=>$lastest['version'],
+                                    'link'=>$lastest['link'],
+                                    'message'=>$lastest['message']
+                                )
+                            ]; 
+                        } 
+                        else
+                        {
+                            $data = [
+                                'code'=>405,
+                                'msg'=>'没有相应的版本'
+                            ];
+                        }
+                    }
+                    // $obj = new version();
+                    // $res = $obj->update();
+            }
+        }
+        return json_encode($data);
+    }   
+    public function actionAdd()
+    {
+        return $this->render('version');
+    }
 } 
