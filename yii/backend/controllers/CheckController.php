@@ -7,6 +7,17 @@ use backend\models\check;
 
 class CheckController extends Controller{
     public $enableCsrfValidation = false;
+    //待检测接口
+     public function actionWaitcheck(){
+        if(Yii::$app->request->post()){
+            $data = Yii::$app->request->post();
+            $obj = new Msg_sql();
+            return $obj->check($data);
+        }else{
+            return $this->render('checkcar');
+        }
+    }
+    //检测事变接口
     public function actionCheckfail(){
         if(Yii::$app->request->post()){
             $data = Yii::$app->request->post();
