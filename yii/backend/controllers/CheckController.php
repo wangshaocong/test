@@ -5,7 +5,7 @@ use Yii;
 use yii\web\Controller;
 use backend\models\check;
 
-class CheckController extends Controller{
+class CheckController extends CommonController{
     public $enableCsrfValidation = false;
     //待检测接口
      public function actionWaitcheck(){

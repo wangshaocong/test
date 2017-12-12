@@ -9,7 +9,7 @@ use backend\models\Auditingreturn;
 /**
 * 
 */
-class AuditController extends Controller
+class AuditController extends CommonController
 {
 	public $enableCsrfValidation = false;
 	//审核驳回接口

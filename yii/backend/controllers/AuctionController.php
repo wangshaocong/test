@@ -3,12 +3,39 @@ namespace backend\controllers;
 
 use Yii;
 use yii\web\Controller;
-use backend\models\complete;
+use common\models\LoginForm;
+use backend\models\AuUser;          //登录model
+use backend\models\complete;        //已完成model
+
 header("content-type:text/html;charset=utf8");
-class AuctionController extends Controller{
+class AuctionController extends CommonController{
 	public $enableCsrfValidation = false;
     public $layout = false;
-	//已完成列表
+    /**
+        登录接口
+    */
+    public function actionLogin(){
+        $username = Yii::$app->request->post('username');
+        $password = Yii::$app->request->post('password');
+        $db = new AuUser();
+        $res = $db->find()->where("username='$username' and password='$password'")->one();
+        // 登录成功生成token
+        $userId = $res['user_id'];
+        if($res){
+            $res=$this->createKey($userId);
+            $token = base64_encode($res);
+            $this->success['data']['username'] = $username;
+            $this->success['data']['password'] = $password;
+            $this->success['data']['token'] = $token;
+            return json_encode($this->success);  
+        }else{
+            $arr = $this->error;
+            return json_encode($this->error);
+        };
+    }
+	/**
+        已完成列表接口
+    */
 	public function actionComplete(){
 		if(yii::$app->request->isPost){
 			$data       = yii::$app->request->post();
@@ -53,7 +80,9 @@ class AuctionController extends Controller{
 		return $this->render('index');
 	}
 
-	//版本更新接口
+	/**
+        版本更新接口
+    */
 	public function actionVersionupdate() {
         // $rep = array('code' => 200);
         $emp_id = Yii::$app->request->post('emp_id',0);
@@ -109,4 +138,7 @@ class AuctionController extends Controller{
     {
         return $this->render('version');
     }
+    /**
+     车辆信息接口
+     */
 } 
