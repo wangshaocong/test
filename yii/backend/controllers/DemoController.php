@@ -158,4 +158,11 @@ beijing.aliyuncs.com/2015-11-09/2116/88f2/62fb266e-95dc-2cd8-f570-d4bc0ec09742.j
                 <input name="submit" value="submit" type="submit">
             </form>
 
+<b>13,版本更新</b>
+            <form action="http://yii.liulinfang.com/auction/Versionupdate" method="post" target="_blank">
+                <br>员工ID:<input name="emp_id" value="198">
+                <br>令牌:<input size="150" name="token" value="MDAwMDAwMDAwMH2hdrGxzWOxsIdjq4GpdN2zip_bsKXSrYBiap2IrbbgiWmKarHRgaG9eH2hga2I3cB6fsm9uLGdgJx2sYGtupl9e4-mvJaBpg">
+                <br>车辆ID:<input name="car_id" value="50">
+                <input name="submit" value="submit" type="submit">
+            </form>
     </body></html>
