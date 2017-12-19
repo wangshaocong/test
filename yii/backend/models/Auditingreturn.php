@@ -25,7 +25,7 @@ class Auditingreturn extends Model{
                     );
                 return json_encode($arr);
             }
-            $real_token = '4';
+            $real_token = base64_encode($emp_id);
             if($real_token !== $token){
                     $arr = array(
                         'code'=>407,

@@ -6,13 +6,12 @@ use yii\base\Model;
 
 class check extends Model{
     public function update($data){
-        $own_id = $data['own_id'];
+        $own_id = $data['owner_id'];
         $emp_id = $data['emp_id'];
         $type   = $data['type'];
         $remark = $data['remark'];
         $time   = time();
-        $fail_time = date('Y-m-d H:i:s');
-        $sql = "update au_car_owner set check_fail_type = $type,checker_id = $emp_id,remark_fail = $remark,updatetime = $time where owner_id = $own_id";
+        $sql = "update au_car_owner set check_fail_type = $type,checker_id = $emp_id,remark_fail ='$remark',updatetime = $time where owner_id = $own_id";
         //check_fail_type  线索表 checker_id 线索表 remark_fail 线索表 owner_id线索表
         $res = yii::$app->db->createCommand($sql)->execute();
         if ($res) {

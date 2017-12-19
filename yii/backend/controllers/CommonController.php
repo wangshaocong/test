@@ -23,7 +23,7 @@ class CommonController extends Controller
         echo 11111;
 
     }
-            // 默认状态
+             //默认状态
     public $success = [
         'code' => 200,
         'msg'  => 'success',

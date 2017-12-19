@@ -1022,9 +1022,9 @@ class OssClient
         $this->precheckCommon($bucket, $object, $options);
         OssUtil::throwOssExceptionWithMessageIfEmpty($file, "file path is invalid");
         $file = OssUtil::encodePath($file);
-        if (!file_exists($file)) {
-            throw new OssException($file . " file does not exist");
-        }
+//        if (!file_exists($file)) {
+//            throw new OssException($file . " file does not exist");
+//        }
         $options[self::OSS_FILE_UPLOAD] = $file;
         $file_size = filesize($options[self::OSS_FILE_UPLOAD]);
         $is_check_md5 = $this->isCheckMD5($options);

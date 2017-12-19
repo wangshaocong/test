@@ -2,8 +2,9 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\web\Controller;
 use backend\models\check;
+use backend\models\Msg_sql;
+use backend\controllers\CommonController;
 
 class CheckController extends CommonController{
     public $enableCsrfValidation = false;
@@ -17,7 +18,7 @@ class CheckController extends CommonController{
             return $this->render('checkcar');
         }
     }
-    //检测事变接口
+    //检测失败接口
     public function actionCheckfail(){
         if(Yii::$app->request->post()){
             $data = Yii::$app->request->post();
@@ -33,7 +34,7 @@ class CheckController extends CommonController{
                 );
                 echo json_encode($arr);die;
             }
-            $token = "1"; 
+            $token = base64_encode($emp_id);
             if($token == $post_token){
                 $obj = new check();
                 $res = $obj->update($data);

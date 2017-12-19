@@ -37,7 +37,7 @@ class AuditController extends CommonController
 	        		);
 	        	return json_encode($arr);
 	        }
-	        $real_token=md5(md5($emp_id)."315C");
+	        $real_token=base64_encode($emp_id);
 	        if($token!==$real_token)
 	        {
 	        	$arr=array(
