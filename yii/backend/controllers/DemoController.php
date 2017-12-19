@@ -158,7 +158,7 @@ beijing.aliyuncs.com/2015-11-09/2116/88f2/62fb266e-95dc-2cd8-f570-d4bc0ec09742.j
                 <input name="submit" value="submit" type="submit">
             </form>
 
-<b>13,版本更新</b>
+            <b>13,版本更新</b>
            <form action="?r=auction/versionupdate" method="post" target="_self">
                 emp_id:    <input name="version" value="" type="text">        <br>
                 sort:<input name="sort" value="">               <br>
