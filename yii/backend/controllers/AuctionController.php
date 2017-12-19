@@ -89,23 +89,14 @@ class AuctionController extends CommonController{
         $sort_id = Yii::$app->request->post('sort',0);
         $driver = Yii::$app->request->post('driver',0);
         $version = Yii::$app->request->post('version');
-        $token = Yii::$app->request->post('token','');
-        if ($sort_id < 1 || $driver < 1 || $version == '') {
+        if ($version == '') {
             $data = [
                 'code'=>201,
                 'msg'=>"error",
                     'data'=>"参数不完整"
                 ];
-            } else {
-                $owner_token = '1';
-                if($token !== $owner_token){
-                     $data = [
-                        'code'=>500,
-                        'msg'=>"error",
-                        'data'=>"token不正确"
-                    ];
-                }else{
-                    $lastest = Yii::$app->db->createCommand("select * from `au_version` order by version  DESC limit 1")->queryOne();
+            }else{
+                    $lastest = Yii::$app->db->createCommand("select from `au_version` order by id  DESC limit 1")->queryOne();
                     if ($lastest) {
                         if ($version==$lastest['version'])
                         {
